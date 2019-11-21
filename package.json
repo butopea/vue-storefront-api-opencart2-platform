@@ -1,0 +1,22 @@
+{
+  "name": "vue-storefront-api-opencart2-platform",
+  "description": "OpenCart 2 Platform for Vue Storefront API",
+  "version": "0.1.0",
+  "license": "MIT",
+  "deprecated": false,
+  "dependencies": {
+    "oauth-1.0a": "^1.0.1",
+    "request": "^2.72.0",
+    "winston": "^2.2.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/butopea/vue-storefront-api-opencart2-platform",
+  "keywords": [
+    "OpenCart2",
+    "REST",
+    "VsBridge",
+    "API"
+  ]
+}
