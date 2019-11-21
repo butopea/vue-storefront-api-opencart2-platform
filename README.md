@@ -8,7 +8,12 @@ This module is built for the [Vue Storefront - first Progressive Web App for eCo
 
 ## Installation
 
-* Add the repository contents into the `Vue Storefront API` / `src` / `platform` / `opencart2`
+* Add the repository contents into the `Vue Storefront API` / `src` / `platform` / `opencart2` by importing it as a git submodule:
+
+```shell script
+git submodule add git@github.com:butopea/vue-storefront-api-opencart2-platform.git src/platform/opencart2
+```
+
 * Add the following to your Vue Storefront API config file (`config` / `local.json`)
 ```json
 ...
