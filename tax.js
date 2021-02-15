@@ -101,7 +101,9 @@ class TaxProxy extends AbstractTaxProxy {
           resolve(productList)
         }).catch(err => {
           reject(err)
-        })
+        }).finally(
+          client.close()
+        )
       } else {
         resolve(productList)
       }
