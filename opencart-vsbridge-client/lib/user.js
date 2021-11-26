@@ -64,5 +64,23 @@ module.exports = function (restClient) {
       return getResponse(data);
     });
   }
+  module.getWishlistItems = function (customerToken) {
+    const url = `user/getWishlistItems?token=${customerToken}`
+    return restClient.get(url).then((data) => {
+      return getResponse(data);
+    });
+  }
+  module.addWishlistItem = function (productId, customerToken) {
+    const url = `user/addWishlistItem?token=${customerToken}`
+    return restClient.post(url, { product_id: productId }).then((data) => {
+      return getResponse(data);
+    });
+  }
+  module.deleteWishlistItem = function (productId, customerToken) {
+    const url = `user/deleteWishlistItem?token=${customerToken}`
+    return restClient.post(url, { product_id: productId }).then((data) => {
+      return getResponse(data);
+    });
+  }
   return module;
 }

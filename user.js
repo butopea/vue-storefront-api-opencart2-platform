@@ -16,6 +16,15 @@ class UserProxy extends AbstractUserProxy {
   me (customerToken) {
     return this.api.user.me(customerToken)
   }
+  getWishlistItems (customerToken) {
+    return this.api.user.getWishlistItems(customerToken)
+  }
+  addWishlistItem (productId, customerToken) {
+    return this.api.user.addWishlistItem(productId, customerToken)
+  }
+  deleteWishlistItem (productId, customerToken) {
+    return this.api.user.deleteWishlistItem(productId, customerToken)
+  }
   orderHistory (customerToken, page, pageSize) {
     return this.api.user.orderHistory(customerToken, page, pageSize)
   }
